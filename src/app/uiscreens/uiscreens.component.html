@@ -1,0 +1,26 @@
+
+<mat-card class = "tp-card">
+  <h3>Please Check Your Inbox!</h3>
+  <h5>To securely sign in please enter the five-digit code we have just sent to <span class="email"> John.gibbons@absconsulting.com</span>
+  </h5>
+  
+<hr>    <mat-card-content>
+  <form name="form" [formGroup]="form" (ngSubmit)="form.valid && onSubmit()">   
+ 
+    <input type="text"  formControlName="input1" onchange="this.className=(this.value=='')?'':'visited';" [ngClass]="{'is-invalid':form.get('input1').touched && form.get('input1').invalid}" required />
+      <input type="text" formControlName="input2" onchange="this.className=(this.value=='')?'':'visited';" [ngClass]="{'is-invalid':form.get('input2').touched && form.get('input2').invalid}" required />
+        <input type="text" formControlName="input3" onchange="this.className=(this.value=='')?'':'visited';" [ngClass]="{'is-invalid':form.get('input3').touched && form.get('input3').invalid}" required />
+           <input type="text" formControlName="input4" onchange="this.className=(this.value=='')?'':'visited';" [ngClass]="{'is-invalid':form.get('input4').touched && form.get('input4').invalid}" required />
+               <input type="text" formControlName="input5" onchange="this.className=(this.value=='')?'':'visited';" [ngClass]="{'is-invalid':form.get('input5').touched && form.get('input5').invalid}" required />
+     </form>  
+     
+  </mat-card-content>
+  <button class="btn btn-primary"  [disabled]="!form.valid">Continue</button>
+  
+    <mat-card-actions>
+     <h5>Didn't get a code? <span class="email"> <a>Send a new one.</a></span>
+     </h5>
+      </mat-card-actions>
+  </mat-card>
+  
+  

@@ -1,0 +1,24 @@
+
+  <mat-card class = "tp-card">
+     <h3>Added Security Measure</h3>
+     <h4>We need to confirm your John Gibbons.</h4>
+     <p class="headerinfo">To protect your account and privacy, we need to quick verify you'r identity by sending you a temporary five-digit code. Once you receive the code, click <span class="italic">Continue</span> below and enter it on the next screen.
+     </p>
+     <hr>
+     <h5>How do you want to receive the temporary five-digit code?
+     </h5>
+       <mat-card-content>
+        <form [formGroup]="testForm" novalidate>
+          <mat-radio-group [formGroup]="radiogroup" >
+            <mat-radio-button value="one" color="primary" formControlName="option1">Phone</mat-radio-button>
+            <mat-radio-button value="two" color="primary"formControlName="option2">Text</mat-radio-button>  
+            <mat-radio-button value="three" color="primary"formControlName="option3">Email</mat-radio-button>  
+          </mat-radio-group>
+        </form>
+       </mat-card-content>
+       <mat-card-actions>
+        <button  routerLink="/ui-screens" class="btn btn-primary" >Continue</button>
+      </mat-card-actions>
+     </mat-card>
+     
+  
