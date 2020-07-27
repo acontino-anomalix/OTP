@@ -1,6 +1,9 @@
 # OTP
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
+## Installing Application
+
+Run npm i @angular/material to install the angular material library. After this install please run a npm install to install all node modules.
 
 ## Development server
 
