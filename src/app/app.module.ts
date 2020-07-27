@@ -11,12 +11,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { OtpinitialComponent } from './otpinitial/otpinitial.component';
 
 import {MatRadioModule} from '@angular/material';
+import { FailscreenComponent } from './failscreen/failscreen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UiscreensComponent,
-    OtpinitialComponent
+    OtpinitialComponent,
+    FailscreenComponent
   ],
   imports: [
     HttpClientModule,
